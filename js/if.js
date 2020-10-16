@@ -66,3 +66,17 @@ if ('5' == 5) {
 console.log('5' + 4);
 console.log(4 + '5');
 console.log(1 + 2 + '3' + 4 + '5');
+
+console.clear();
+
+if (4 == '4') {
+    console.log('true expected');
+} else {
+    console.log('falllllse');
+}
+
+if (4 === '4') {
+    console.log('true');
+} else {
+    console.log('falllllse expected');
+}

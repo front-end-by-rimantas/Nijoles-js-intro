@@ -1,3 +1,5 @@
+// "use strict";
+
 // ciklas: proceduru kartojimas kelis kartus
 // for, while, do-white, foreach...
 
@@ -25,8 +27,9 @@ console.log(prekes);
 let saskaita = 0;
 
 for (let i = 0; i < prekes.length; i++) {
+    const preke = prekes[i];
     // apskaiciuoti kiek uzdirbciau is vienos prekes
-    const uzdarbis = prekes[i].kaina * prekes[i].kiekis;
+    const uzdarbis = preke.kaina * preke.kiekis;
     // suma prideti prie kaupiamosios saskaitos
     saskaita = saskaita + uzdarbis;
     // isspausdiname paziureti kiek jau uzdirbau
